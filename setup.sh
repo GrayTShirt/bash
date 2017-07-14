@@ -1,5 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
-git clone https://github.com/graytshirt/bash.git
-cd bash
+pushd $(pwd)
+repo=$(mktmp)
+git clone https://github.com/graytshirt/bash.git $repo
+cd $repo
 make install
+popd
+rm -rf $repo
