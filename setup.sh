@@ -1,9 +1,9 @@
 #!/bin/bash
 
-pushd `pwd`
-repo=`mktemp`
-git clone https://github.com/graytshirt/bash.git $repo
+orig=`pwd`
+repo=`mktemp -d`
+git clone https://github.com/graytshirt/bash.git $repo || exit 1
 cd $repo
 make install
-popd
+cd $orig
 rm -rf $repo
