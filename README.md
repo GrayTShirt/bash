@@ -4,7 +4,7 @@ a light weight bash environment
 
 to install:
 ```
-curl https://raw.githubusercontent.com/GrayTShirt/bash/master/setup.sh|sh -
+curl https://raw.githubusercontent.com/dmolik/bash/master/setup.sh|sh -
 ```
 
 Also helpful:
